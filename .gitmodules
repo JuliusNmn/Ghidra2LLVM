@@ -1,0 +1,3 @@
+[submodule "ghidra-to-llvm"]
+	path = ghidra-to-llvm
+	url = https://github.com/toor-de-force/Ghidra-to-LLVM

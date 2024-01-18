@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Ghidra2LLVM</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <!--
+         https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.5_build/ghidra_10.1.5_PUBLIC_20220726.zip
+        -->
+        <!--
+          '/home/naeumann/Desktop/ghidra_10.1.5_PUBLIC_20220726/ghidra_10.1.5_PUBLIC/support/buildGhidraJar'
+        -->
+        <!--
+         /Users/julius/Downloads/apache-maven-3.8.7/bin/mvn  install:install-file -Dfile=ghidra-10.1_PUBLIC_20211210a.jar -DgroupId=ghidra -DartifactId=ghidra -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DgeneratePom=true
+        -->
+        <dependency>
+            <groupId>ghidra</groupId>
+            <artifactId>ghidra</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.bytedeco/llvm-platform -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>llvm-platform</artifactId>
+            <version>16.0.4-1.5.9</version>
+        </dependency>
+    </dependencies>
+</project>
